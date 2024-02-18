@@ -2,12 +2,12 @@ let kinoArray = [];
 
 function addToArray() {
     console.log("array activated");
-    let Film = document.getElementById("film").value;
-    let Antall = document.getElementById("quantity").value;
-    let Fornavn = document.getElementById("firstname").value;
-    let Etternavn = document.getElementById("surname").value;
-    let Telefonnr = document.getElementById("phonenr").value;
-    let Epost = document.getElementById("email").value;
+    const Film = document.getElementById("film").value;
+    const Antall = document.getElementById("quantity").value;
+    const Fornavn = document.getElementById("firstname").value;
+    const Etternavn = document.getElementById("surname").value;
+    const Telefonnr = document.getElementById("phonenr").value;
+    const Epost = document.getElementById("email").value;
 
 
     kinoArray.push({
@@ -27,10 +27,10 @@ function populateHTML(kinoArray) {
         html += "<li>" + kinoArray[i].FilmKey + " " + kinoArray[i].AntallKey + " " + kinoArray[i].FornavnKey
             + " " + kinoArray[i].EtternavnKey + " " + kinoArray[i].EpostKey + " " + kinoArray[i].TelefonnrKey + "</li>";
 
-        html += "</ol>"
-        document.getElementById("result").innerHTML = html;
-        console.log(html);
     }
+    html += "</ol>"
+    document.getElementById("result").innerHTML = html;
+    console.log(html);
 }
 
 function deleteArray() {
