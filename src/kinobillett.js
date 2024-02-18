@@ -39,7 +39,7 @@ function deleteArray() {
 }
 
 function validateQuantity(quantity) {
-    const regexp = /^[0-9]{1,3}$/;
+    const regexp = /^[0-9]{1,2}$/;
     const valid = regexp.test(quantity);
     if (!valid) {
         $("#errorQuantity").html("skriv inn et tall mellom 1 og 100")
